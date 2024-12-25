@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+      
+    </style>
+    <script src="style.js"></script>
+  </head>
+  <body>
+    
+    <div>
+      <img class="main-logo" src="images/logo.jpg.png"/>
+    </div>
+
+     
+    <div class="movie-container">
+      <label style="font-size: 1em;">Pick a movie:</label>
+      <select id="movie" onchange="myFunction()">
+        <option value="250">Sapta Sagaradaache Ello - Side A (Rs 250)</option>
+        <option value="350">Sam Bahadur (RS 350)</option>
+        <option value="290">Major (Rs 290)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div id="seat" class="seat"></div>
+        <small class="status" style="font-size: 1em;">N/A</small>
+      </li>
+      <li>
+        <div id="seat" class="seat selected"></div>
+        <small class="status" style="font-size: 1em;">Selected</small>
+      </li>
+      <li>
+        <div id="seat" class="seat occupied"></div>
+        <small class="status" style="font-size: 1em;">Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div id="seat" class="seat">1</div>
+        <div id="seat" class="seat">2</div>
+        <div id="seat" class="seat">3</div>
+        <div id="seat" class="seat">4</div>
+        <div id="seat" class="seat">5</div>
+        <div id="seat" class="seat">6</div>
+        <div id="seat" class="seat">7</div>
+        <div id="seat" class="seat">8</div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat">9</div>
+        <div id="seat" class="seat">10</div>
+        <div id="seat" class="seat">11</div>
+        <div id="seat" class="seat occupied">12</div>
+        <div id="seat" class="seat occupied">13</div>
+        <div id="seat" class="seat">14</div>
+        <div id="seat" class="seat">14</div>
+        <div id="seat" class="seat">16</div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat">17</div>
+        <div id="seat" class="seat">18</div>
+        <div id="seat" class="seat">19</div>
+        <div id="seat" class="seat">20</div>
+        <div id="seat" class="seat">21</div>
+        <div id="seat" class="seat">22</div>
+        <div id="seat" class="seat occupied">23</div>
+        <div id="seat" class="seat occupied">24</div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat">25</div>
+        <div id="seat" class="seat">26</div>
+        <div id="seat" class="seat">27</div>
+        <div id="seat" class="seat">28</div>
+        <div id="seat" class="seat">29</div>
+        <div id="seat" class="seat">30</div>
+        <div id="seat" class="seat">31</div>
+        <div id="seat" class="seat">32</div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat">33</div>
+        <div id="seat" class="seat">34</div>
+        <div id="seat" class="seat">35</div>
+        <div id="seat" class="seat occupied">36</div>
+        <div id="seat" class="seat occupied">37</div>
+        <div id="seat" class="seat">38</div>
+        <div id="seat" class="seat">39</div>
+        <div id="seat" class="seat">40</div>
+      </div>
+      <div class="row">
+        <div id="seat" class="seat">41</div>
+        <div id="seat" class="seat">42</div>
+        <div id="seat" class="seat">43</div>
+        <div id="seat" class="seat">44</div>
+        <div id="seat" class="seat occupied">45</div>
+        <div id="seat" class="seat occupied">46</div>
+        <div id="seat" class="seat occupied">47</div>
+        <div id="seat" class="seat">48</div>
+      </div>
+    </div>
+
+    <p class="text" style="font-size: 1em;margin:0px 0px 15px 0px">
+      You have selected <span id="count">0</span> seats for a price of Rs <span
+        id="total"
+        >0</span
+      >
+    </p>
+    
+    <a href="payment.html">
+    <button class="btn-pay">
+      PAY
+    </button>
+  </a>
+    <br>
+
+    <a href="./index.html">
+      <button class="btn-home">
+        Home
+        
+      </button>
+    </a>
+    
+
+    <script src="style.js"></script>
+  </body>
+</html>
